@@ -18,6 +18,7 @@
 
 - (IBAction)proximoCampo:(UITextField *)campoAtual;
 
+
 @property (strong) NSMutableArray * contatos;
 
 @end

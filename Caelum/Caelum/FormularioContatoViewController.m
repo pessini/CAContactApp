@@ -41,7 +41,6 @@
 {
     self = [super init];
     if (self) {
-        self.contatos = [[NSMutableArray alloc] init];
         
         self.navigationItem.title = @"Cadastro";
         UIBarButtonItem *botaoAddContato = [[UIBarButtonItem alloc]

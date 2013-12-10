@@ -10,6 +10,6 @@
 
 @interface ListaContatosViewController : UITableViewController
 
-
+@property (weak) NSMutableArray * contatos; // pode ser weak porque ela é dependente dos contatos
 
 @end

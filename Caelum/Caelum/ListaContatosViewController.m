@@ -33,6 +33,9 @@
 {
     FormularioContatoViewController * form = [[FormularioContatoViewController alloc] init];
     
+    // dependência contatos do Formulário agora referencia o mesmo objeto da dependência de contatos da Lista
+    form.contatos = self.contatos;
+    
     // cria uma pilha de navegação na barra de navegação
     [self.navigationController pushViewController:form animated:YES];
 }

@@ -14,6 +14,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 { 
+    
+    self.contatos = [[NSMutableArray alloc] init];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // design pattern para criar e limitar a janela dependendo do dispositivo
     
@@ -22,6 +25,9 @@
     
     // inicio a view criada para a lista
     ListaContatosViewController * lista = [[ListaContatosViewController alloc] init];
+    
+    // injetar dependência via setter (agora tem uma referência para o mesmo objeto da lista)
+    lista.contatos = self.contatos;
     
     // inicia a barra de navegação e coloca a lista acima
     UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:lista];
