@@ -12,11 +12,18 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{ 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // design pattern para criar e limitar a janela dependendo do dispositivo
+    
+    // inicio a view criada para o formulário (criando o objeto)
+    FormularioContatoViewController * form = [[FormularioContatoViewController alloc] init];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    self.window.rootViewController = form; // colocando o form como janela principal
+    [self.window makeKeyAndVisible]; // com colchetes estou mandando uma mensagem para esse objeto
+    
     return YES;
 }
 
