@@ -35,4 +35,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pegaDadosFormulario:(id)sender {
+    
+   // NSDictionary * newContact = [[NSDictionary alloc] init]; nesse caso a classe NSDictionary é imutável
+    
+    
+    NSMutableDictionary * contato = [[NSMutableDictionary alloc] init];
+    
+    [contato setObject:self.nome.text forKey:@"nome"];
+    [contato setObject:self.telefone.text forKey:@"telefone"];
+    [contato setObject:self.email.text forKey:@"email"];
+    [contato setObject:self.endereco.text forKey:@"endereco"];
+    [contato setObject:self.site.text forKey:@"site"];
+    
+    NSLog(@"Contato %@ adicionado com sucesso", contato[@"nome"]);
+
+    
+    
+    
+}
 @end
