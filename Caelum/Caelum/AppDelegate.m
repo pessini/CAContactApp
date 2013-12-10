@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FormularioContatoViewController.h"
 
 @implementation AppDelegate
 
