@@ -33,8 +33,8 @@
 {
     FormularioContatoViewController * form = [[FormularioContatoViewController alloc] init];
     
-    // exibe formulário como uma modal
-    [self presentViewController:form animated:YES completion:nil];
+    // cria uma pilha de navegação na barra de navegação
+    [self.navigationController pushViewController:form animated:YES];
 }
 
 @end

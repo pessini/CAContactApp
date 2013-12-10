@@ -84,8 +84,8 @@
     
     NSLog(@"Contatos: %@", self.contatos);
     
-    // fechar a modal para voltar a listagem após adicionar o contato através do formulário
-    [self dismissViewControllerAnimated:YES completion:nil];
+    // desempilha para voltar a view anterior
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 - (IBAction)proximoCampo:(UITextField *)campoAtual {
