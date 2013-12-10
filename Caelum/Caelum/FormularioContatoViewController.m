@@ -42,11 +42,34 @@
     self = [super init];
     if (self) {
         self.contatos = [[NSMutableArray alloc] init];
+        
+        self.navigationItem.title = @"Cadastro";
+        UIBarButtonItem *botaoAddContato = [[UIBarButtonItem alloc]
+                                            initWithTitle:@"Confimar"
+                                            style:UIBarButtonItemStylePlain
+                                            target:self
+                                            action:@selector(criaContato)];
+        
+        self.navigationItem.rightBarButtonItem = botaoAddContato;
     }
     return self;
 }
 
-- (IBAction)pegaDadosFormulario:(id)sender {
+- (void)criaContato
+{
+    // cria o objetivo contato
+    Contato * contato = [self pegaDadosFormulario];
+    
+    // (envia uma mensagem) adicionar os contatos na lista criada NSMutableArray * contatos
+    [self.contatos addObject:contato];
+    
+    NSLog(@"Contatos: %@", self.contatos);
+    
+    // desempilha para voltar a view anterior
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (Contato *)pegaDadosFormulario {
     
     // cria o objetivo contato
     Contato * contato = [[Contato alloc] init];
@@ -58,35 +81,10 @@
     contato.endereco = self.endereco.text;
     contato.site = self.site.text;
     
-   // NSDictionary * newContact = [[NSDictionary alloc] init]; nesse caso a classe NSDictionary é imutável
+    //[self.view endEditing:YES]; // esconder o teclado
     
-    
-    /*
-    
-     NSMutableDictionary * contato = [[NSMutableDictionary alloc] init];
-    
-    [contato setObject:self.nome.text forKey:@"nome"];
-    [contato setObject:self.telefone.text forKey:@"telefone"];
-    [contato setObject:self.email.text forKey:@"email"];
-    [contato setObject:self.endereco.text forKey:@"endereco"];
-    [contato setObject:self.site.text forKey:@"site"];
-     
-     NSLog(@"Contato %@ adicionado com sucesso", contato[@"nome"]);
-     
-     */
-    
-    //NSLog(@"Contato %@ adicionado com sucesso", contato);
-    
-    [self.view endEditing:YES]; // esconder o teclado
-    
-    // (envia uma mensagem) adicionar os contatos na lista criada NSMutableArray * contatos
-    [self.contatos addObject:contato];
-    
-    NSLog(@"Contatos: %@", self.contatos);
-    
-    // desempilha para voltar a view anterior
-    [self.navigationController popViewControllerAnimated:YES];
-    
+    return contato;
+
 }
 - (IBAction)proximoCampo:(UITextField *)campoAtual {
     
