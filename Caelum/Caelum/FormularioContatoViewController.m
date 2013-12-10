@@ -7,6 +7,7 @@
 //
 
 #import "FormularioContatoViewController.h"
+#import "Contato.h"
 
 @interface FormularioContatoViewController ()
 
@@ -37,21 +38,32 @@
 
 - (IBAction)pegaDadosFormulario:(id)sender {
     
+    Contato * contato = [[Contato alloc] init];
+    
+    contato.nome = self.nome.text;
+    contato.telefone = self.telefone.text;
+    contato.email = self.email.text;
+    contato.endereco = self.endereco.text;
+    contato.site = self.site.text;
+    
    // NSDictionary * newContact = [[NSDictionary alloc] init]; nesse caso a classe NSDictionary é imutável
     
     
-    NSMutableDictionary * contato = [[NSMutableDictionary alloc] init];
+    /*
+    
+     NSMutableDictionary * contato = [[NSMutableDictionary alloc] init];
     
     [contato setObject:self.nome.text forKey:@"nome"];
     [contato setObject:self.telefone.text forKey:@"telefone"];
     [contato setObject:self.email.text forKey:@"email"];
     [contato setObject:self.endereco.text forKey:@"endereco"];
     [contato setObject:self.site.text forKey:@"site"];
+     
+     NSLog(@"Contato %@ adicionado com sucesso", contato[@"nome"]);
+     
+     */
     
-    NSLog(@"Contato %@ adicionado com sucesso", contato[@"nome"]);
-
-    
-    
+    NSLog(@"Contato %@ adicionado com sucesso", contato);
     
 }
 @end
