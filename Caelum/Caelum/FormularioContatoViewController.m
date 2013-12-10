@@ -72,7 +72,7 @@
     
     UIResponder * proximoCampo = [self.view viewWithTag:(campoAtual.tag+1)];
     
-    if (proximoCampo != nil) {
+    if (proximoCampo) {
         [proximoCampo becomeFirstResponder];
     } else {
         [campoAtual resignFirstResponder];
