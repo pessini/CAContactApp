@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F106EE01857814E009BD48F /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F106EDF1857814E009BD48F /* ListaContatosViewController.m */; };
 		9F534DAA18574CB300BC1D78 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F534DA918574CB300BC1D78 /* Contato.m */; };
 		9FF7138018572E2F0018AF2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7137F18572E2F0018AF2D /* UIKit.framework */; };
 		9FF7138218572E2F0018AF2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7138118572E2F0018AF2D /* Foundation.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F106EDE1857814E009BD48F /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
+		9F106EDF1857814E009BD48F /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 		9F534DA818574CB300BC1D78 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		9F534DA918574CB300BC1D78 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		9FF7137C18572E2F0018AF2D /* Caelum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caelum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,11 +91,13 @@
 			children = (
 				9FF7138E18572E2F0018AF2D /* AppDelegate.h */,
 				9FF7138F18572E2F0018AF2D /* AppDelegate.m */,
+				9F106EDE1857814E009BD48F /* ListaContatosViewController.h */,
+				9F106EDF1857814E009BD48F /* ListaContatosViewController.m */,
 				9FF7139C185734AF0018AF2D /* FormularioContatoViewController.h */,
 				9FF7139D185734AF0018AF2D /* FormularioContatoViewController.m */,
+				9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */,
 				9F534DA818574CB300BC1D78 /* Contato.h */,
 				9F534DA918574CB300BC1D78 /* Contato.m */,
-				9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */,
 				9FF7138618572E2F0018AF2D /* Supporting Files */,
 			);
 			path = Caelum;
@@ -182,6 +187,7 @@
 				9FF7139018572E2F0018AF2D /* AppDelegate.m in Sources */,
 				9FF7139F185734AF0018AF2D /* FormularioContatoViewController.m in Sources */,
 				9F534DAA18574CB300BC1D78 /* Contato.m in Sources */,
+				9F106EE01857814E009BD48F /* ListaContatosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FormularioContatoViewController.h"
+#import "ListaContatosViewController.h"
 
 @implementation AppDelegate
 
@@ -17,11 +18,17 @@
     // design pattern para criar e limitar a janela dependendo do dispositivo
     
     // inicio a view criada para o formulário (criando o objeto)
-    FormularioContatoViewController * form = [[FormularioContatoViewController alloc] init];
+    //FormularioContatoViewController * form = [[FormularioContatoViewController alloc] init];
+    
+    // inicio a view criada para a lista
+    ListaContatosViewController * lista = [[ListaContatosViewController alloc] init];
+    
+    // inicia a barra de navegação e coloca a lista acima
+    UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:lista];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = form; // colocando o form como janela principal
+    self.window.rootViewController = navigation; // colocando o form como janela principal
     [self.window makeKeyAndVisible]; // com colchetes estou mandando uma mensagem para esse objeto
     
     return YES;

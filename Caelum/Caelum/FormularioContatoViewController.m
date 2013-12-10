@@ -36,10 +36,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+// sobrescrever o init do NSObject
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.contatos = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 - (IBAction)pegaDadosFormulario:(id)sender {
     
+    // cria o objetivo contato
     Contato * contato = [[Contato alloc] init];
     
+    // preenche o objeto com os dados preenchidos
     contato.nome = self.nome.text;
     contato.telefone = self.telefone.text;
     contato.email = self.email.text;
@@ -63,9 +75,14 @@
      
      */
     
-    NSLog(@"Contato %@ adicionado com sucesso", contato);
+    //NSLog(@"Contato %@ adicionado com sucesso", contato);
     
     [self.view endEditing:YES]; // esconder o teclado
+    
+    // (envia uma mensagem) adicionar os contatos na lista criada NSMutableArray * contatos
+    [self.contatos addObject:contato];
+    
+    NSLog(@"Contatos: %@", self.contatos);
     
 }
 - (IBAction)proximoCampo:(UITextField *)campoAtual {
