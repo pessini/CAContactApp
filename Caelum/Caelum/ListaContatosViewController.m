@@ -33,6 +33,7 @@
 {
     FormularioContatoViewController * form = [[FormularioContatoViewController alloc] init];
     
+    // exibe formulário como uma modal
     [self presentViewController:form animated:YES completion:nil];
 }
 
