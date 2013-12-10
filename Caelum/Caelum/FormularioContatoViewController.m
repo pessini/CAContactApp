@@ -65,5 +65,7 @@
     
     NSLog(@"Contato %@ adicionado com sucesso", contato);
     
+    [self.view endEditing:YES]; // esconder o teclado
+    
 }
 @end
