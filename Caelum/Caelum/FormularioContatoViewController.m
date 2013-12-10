@@ -68,4 +68,16 @@
     [self.view endEditing:YES]; // esconder o teclado
     
 }
+- (IBAction)proximoCampo:(UITextField *)campoAtual {
+    
+    UIResponder * proximoCampo = [self.view viewWithTag:(campoAtual.tag+1)];
+    
+    if (proximoCampo != nil) {
+        [proximoCampo becomeFirstResponder];
+    } else {
+        [campoAtual resignFirstResponder];
+    }
+
+}
+
 @end
