@@ -26,6 +26,9 @@
         
         self.navigationItem.rightBarButtonItem = botaoAvancaCadastro;
         
+        // adicionar botão Edit para editar elementos da TableView
+        self.navigationItem.leftBarButtonItem = self.editButtonItem;
+        
     }
     return self;
 }
