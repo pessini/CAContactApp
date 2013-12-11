@@ -15,7 +15,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 { 
     
-    self.contatos = [[NSMutableArray alloc] init];
+    if (!self.contatos) { // na primeira vez que a aplicação carregar ele verifica se tem o array, se não ele inicializa o objeto
+        self.contatos = [[NSMutableArray alloc] init];
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // design pattern para criar e limitar a janela dependendo do dispositivo
