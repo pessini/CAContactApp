@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contato.h"
 
 @interface FormularioContatoViewController : UIViewController
 
@@ -18,7 +19,9 @@
 
 - (IBAction)proximoCampo:(UITextField *)campoAtual;
 
-
 @property (strong) NSMutableArray * contatos;
+
+- (id)initWithContato:(Contato *)contato;
+@property (strong) Contato * contato;
 
 @end

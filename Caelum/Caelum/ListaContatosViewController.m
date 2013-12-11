@@ -99,5 +99,17 @@
     }
 }
 
+// pega a ação de tocar na linha da tabela e vamos reescrever o método para dar resposta a essa mensagem
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Contato * contato = self.contatos[indexPath.row];
+    
+//    NSLog(@"%@", contato);
+    
+    FormularioContatoViewController * form = [[FormularioContatoViewController alloc] initWithContato: contato];
+    
+    [self.navigationController pushViewController:form animated:YES];
+    
+}
 
 @end
