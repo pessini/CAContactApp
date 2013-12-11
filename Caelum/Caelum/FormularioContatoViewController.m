@@ -70,9 +70,7 @@
     Contato * contato = [self pegaDadosFormulario];
     
     // (envia uma mensagem) adicionar os contatos na lista criada NSMutableArray * contatos
-    [self.contatos addObject:contato];
-    
-    NSLog(@"Contatos: %@", self.contatos);
+    [self.delegate contatoAdicionado:contato];
     
     // desempilha para voltar a view anterior
     [self.navigationController popViewControllerAnimated:YES];

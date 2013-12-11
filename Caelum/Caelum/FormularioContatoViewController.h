@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Contato.h"
+#import "FormularioContatoViewControllerDelegate.h"
 
 @interface FormularioContatoViewController : UIViewController
 
@@ -19,7 +20,8 @@
 
 - (IBAction)proximoCampo:(UITextField *)campoAtual;
 
-@property (strong) NSMutableArray * contatos;
+// ele não trabalha com a lista, só tem a refer6encia do contato na lista
+@property (weak) id<FormularioContatoViewControllerDelegate> delegate;
 
 - (id)initWithContato:(Contato *)contato;
 @property (strong) Contato * contato;

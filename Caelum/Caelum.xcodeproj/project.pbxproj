@@ -27,6 +27,7 @@
 		9F106EDF1857814E009BD48F /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 		9F534DA818574CB300BC1D78 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		9F534DA918574CB300BC1D78 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		9FA1C6C81858E034006391DF /* FormularioContatoViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewControllerDelegate.h; sourceTree = "<group>"; };
 		9FF7137C18572E2F0018AF2D /* Caelum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caelum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7137F18572E2F0018AF2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FF7138118572E2F0018AF2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +96,7 @@
 				9F106EDF1857814E009BD48F /* ListaContatosViewController.m */,
 				9FF7139C185734AF0018AF2D /* FormularioContatoViewController.h */,
 				9FF7139D185734AF0018AF2D /* FormularioContatoViewController.m */,
+				9FA1C6C81858E034006391DF /* FormularioContatoViewControllerDelegate.h */,
 				9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */,
 				9F534DA818574CB300BC1D78 /* Contato.h */,
 				9F534DA918574CB300BC1D78 /* Contato.m */,
