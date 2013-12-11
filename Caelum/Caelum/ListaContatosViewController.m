@@ -84,5 +84,19 @@
     [self.tableView reloadData];
 }
 
+// reescrevendo objeto para pegar a mensagem do botão delete que herdamos da classe e colocando ação de deletar
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // se a mensagem enviada é para deletar
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        [self.contatos removeObjectAtIndex:indexPath.row]; // apaga o contato no file
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        // apaga a linha (está no plural pq é um array e por isso que está @[indexPath]
+        
+    }
+}
+
 
 @end
