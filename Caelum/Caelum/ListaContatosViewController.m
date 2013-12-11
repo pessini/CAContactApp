@@ -29,6 +29,8 @@
         // adicionar botão Edit para editar elementos da TableView
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
         
+        self.linhaSelecionada = -1;
+        
     }
     return self;
     
@@ -90,10 +92,15 @@
 {
     [super viewDidAppear:animated]; // manter a herança da classe para não perder algo de importante
     
-    NSIndexPath * ip = [NSIndexPath indexPathForRow:self.linhaSelecionada inSection:0];
+    if (self.linhaSelecionada >= 0) {
+
+        NSIndexPath * ip = [NSIndexPath indexPathForRow:self.linhaSelecionada inSection:0];
     
-    [self.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
-    [self.tableView scrollToRowAtIndexPath:ip atScrollPosition:UITableViewScrollPositionNone animated:YES];
+        [self.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
+        [self.tableView scrollToRowAtIndexPath:ip atScrollPosition:UITableViewScrollPositionNone animated:YES];
+        
+        self.linhaSelecionada = -1;
+    }
     
 }
 
