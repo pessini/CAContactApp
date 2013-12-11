@@ -126,6 +126,7 @@
 //    NSLog(@"%@", contato);
     
     FormularioContatoViewController * form = [[FormularioContatoViewController alloc] initWithContato: contato];
+    form.delegate = self;
     
     [self.navigationController pushViewController:form animated:YES];
     
@@ -136,6 +137,11 @@
     [self.contatos addObject:novoContato];
     
     self.linhaSelecionada = [self.contatos indexOfObject:novoContato];
+}
+
+- (void)contatoAlterado:(Contato *)contato
+{
+    self.linhaSelecionada = [self.contatos indexOfObject:contato];
 }
 
 @end

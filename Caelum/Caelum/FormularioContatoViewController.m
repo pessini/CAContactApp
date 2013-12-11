@@ -133,7 +133,8 @@
 - (void)alteraContato
 {
     // temos o endereço do contato na memória (re-utiliza o pegaDadosFormulario pois ele já faz a lógica)
-    [self pegaDadosFormulario];
+    Contato * c = [self pegaDadosFormulario];
+    [self.delegate contatoAlterado:c];
 
     // desempilha (pilha de navegação) para voltar a view anterior
     [self.navigationController popViewControllerAnimated:YES];

@@ -12,5 +12,6 @@
 @protocol FormularioContatoViewControllerDelegate <NSObject>
 
 - (void) contatoAdicionado: (Contato *)novoContato;
+- (void) contatoAlterado: (Contato *)contato;
 
 @end
