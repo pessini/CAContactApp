@@ -13,4 +13,7 @@
 
 @property (weak) NSMutableArray * contatos; // pode ser weak porque ela é dependente dos contatos
 
+// assign pq é uma propriedade primitiva (porém para o ARC o assign e weak é o mesmo)
+@property (assign) NSInteger linhaSelecionada;
+
 @end

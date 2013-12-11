@@ -85,6 +85,18 @@
     [self.tableView reloadData];
 }
 
+// quando o view irá aparecer ele recarrega os dados da tabela
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated]; // manter a herança da classe para não perder algo de importante
+    
+    NSIndexPath * ip = [NSIndexPath indexPathForRow:self.linhaSelecionada inSection:0];
+    
+    [self.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
+    [self.tableView scrollToRowAtIndexPath:ip atScrollPosition:UITableViewScrollPositionNone animated:YES];
+    
+}
+
 // reescrevendo objeto para pegar a mensagem do botão delete que herdamos da classe e colocando ação de deletar
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -115,6 +127,8 @@
 - (void)contatoAdicionado:(Contato *)novoContato
 {
     [self.contatos addObject:novoContato];
+    
+    self.linhaSelecionada = [self.contatos indexOfObject:novoContato];
 }
 
 @end
