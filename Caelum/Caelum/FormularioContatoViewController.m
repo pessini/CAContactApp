@@ -37,6 +37,9 @@
         self.email.text= self.contato.email;
         self.endereco.text= self.contato.endereco;
         self.site.text= self.contato.site;
+        if (self.contato.foto) {
+            [self.botaoFoto setImage:self.contato.foto forState:UIControlStateNormal];
+        }
     }
 }
 
@@ -92,6 +95,10 @@
     self.contato.email = self.email.text;
     self.contato.endereco = self.endereco.text;
     self.contato.site = self.site.text;
+    
+    if (self.botaoFoto.imageView.image) {
+        self.contato.foto = self.botaoFoto.imageView.image;
+    }
     
     //[self.view endEditing:YES]; // esconder o teclado
     

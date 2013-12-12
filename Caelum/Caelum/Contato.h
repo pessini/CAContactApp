@@ -15,6 +15,7 @@
 @property (copy) NSString * email;
 @property (copy) NSString * endereco;
 @property (copy) NSString * site;
+@property (strong) UIImage * foto;
 
 /*
  
