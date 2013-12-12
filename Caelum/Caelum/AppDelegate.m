@@ -42,9 +42,10 @@
     
     // inicia a barra de navegação e coloca a lista acima
     UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:lista];
+    UINavigationController * navigationMapa = [[UINavigationController alloc] initWithRootViewController:mapa];
     
     // criando a view que tem o menu
-    tabs.viewControllers = @[navigation, mapa];
+    tabs.viewControllers = @[navigation, navigationMapa];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
