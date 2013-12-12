@@ -10,7 +10,7 @@
 #import "Contato.h"
 #import "FormularioContatoViewControllerDelegate.h"
 
-@interface FormularioContatoViewController : UIViewController
+@interface FormularioContatoViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nome;
 @property (weak, nonatomic) IBOutlet UITextField *telefone;
@@ -25,5 +25,8 @@
 
 - (id)initWithContato:(Contato *)contato;
 @property (strong) Contato * contato;
+
+- (IBAction)botaoAdicionaImagem:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *botaoFoto;
 
 @end

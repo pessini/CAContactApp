@@ -140,4 +140,36 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)botaoAdicionaImagem:(id)sender
+{
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        //
+    }else{
+
+        UIImagePickerController* picker = [[UIImagePickerController alloc] init];
+
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.allowsEditing = YES;
+        picker.delegate = self;
+
+        [self presentViewController:picker animated:YES completion:nil];
+
+    }
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // aqui trata a alteração do botão
+    
+    UIImage * imagemSelecionada = info[UIImagePickerControllerEditedImage];
+    
+    [self.botaoFoto setImage:imagemSelecionada forState:UIControlStateNormal];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+
 @end
