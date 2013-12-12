@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F106EE01857814E009BD48F /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F106EDF1857814E009BD48F /* ListaContatosViewController.m */; };
 		9F534DAA18574CB300BC1D78 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F534DA918574CB300BC1D78 /* Contato.m */; };
+		9FE8B20F1859F16B00322252 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8B20E1859F16B00322252 /* MessageUI.framework */; };
 		9FF7138018572E2F0018AF2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7137F18572E2F0018AF2D /* UIKit.framework */; };
 		9FF7138218572E2F0018AF2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7138118572E2F0018AF2D /* Foundation.framework */; };
 		9FF7138418572E2F0018AF2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7138318572E2F0018AF2D /* CoreGraphics.framework */; };
@@ -28,6 +29,7 @@
 		9F534DA818574CB300BC1D78 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		9F534DA918574CB300BC1D78 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		9FA1C6C81858E034006391DF /* FormularioContatoViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewControllerDelegate.h; sourceTree = "<group>"; };
+		9FE8B20E1859F16B00322252 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9FF7137C18572E2F0018AF2D /* Caelum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caelum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7137F18572E2F0018AF2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FF7138118572E2F0018AF2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE8B20F1859F16B00322252 /* MessageUI.framework in Frameworks */,
 				9FF7138018572E2F0018AF2D /* UIKit.framework in Frameworks */,
 				9FF7138218572E2F0018AF2D /* Foundation.framework in Frameworks */,
 				9FF7138418572E2F0018AF2D /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +83,7 @@
 		9FF7137E18572E2F0018AF2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE8B20E1859F16B00322252 /* MessageUI.framework */,
 				9FF7137F18572E2F0018AF2D /* UIKit.framework */,
 				9FF7138118572E2F0018AF2D /* Foundation.framework */,
 				9FF7138318572E2F0018AF2D /* CoreGraphics.framework */,

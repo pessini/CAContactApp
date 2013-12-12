@@ -200,7 +200,28 @@
 
 - (void)enviarEmail
 {
+
+    if ([MFMailComposeViewController canSendMail]) {
+        
+        MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+        
+        mc.mailComposeDelegate = self;
+        
+        [mc setToRecipients:@[contatoSelecionado.email]];
+        
+        [mc setSubject:@"Contatos Caelum"];
+        
+        [self presentViewController:mc animated:YES completion:nil];
+        
+    }else{
+        [[[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Não é possível enviar e-mail" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
     
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)abrirSite

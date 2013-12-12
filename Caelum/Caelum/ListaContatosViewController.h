@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "FormularioContatoViewControllerDelegate.h"
+#import <MessageUI/MessageUI.h>
 
-@interface ListaContatosViewController : UITableViewController <FormularioContatoViewControllerDelegate, UIActionSheetDelegate>
+@interface ListaContatosViewController : UITableViewController <FormularioContatoViewControllerDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
 @property (weak) NSMutableArray * contatos; // pode ser weak porque ela é dependente dos contatos
 
