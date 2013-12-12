@@ -10,6 +10,14 @@
 #import "FormularioContatoViewController.h"
 #import "Contato.h"
 
+// Depois da  versão 2.0 vamos declarar a interface privada da classe com a variável para usar nos objetos (iVar)
+
+@interface ListaContatosViewController()
+{
+    Contato *contatoSelecionado;
+}
+@end
+
 @implementation ListaContatosViewController
 
 
@@ -129,9 +137,9 @@
         
         NSIndexPath *ip = [self.tableView indexPathForRowAtPoint:ponto];
         
-        Contato *contato = self.contatos[ip.row];
+        contatoSelecionado = self.contatos[ip.row];
         
-        UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:contato.nome delegate:self cancelButtonTitle:@"Cancela" destructiveButtonTitle:nil otherButtonTitles:@"Ligar", @"Enviar E-mail", @"Visualizar Site", @"Mostrar Mapa", nil];
+        UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:contatoSelecionado.nome delegate:self cancelButtonTitle:@"Cancela" destructiveButtonTitle:nil otherButtonTitles:@"Ligar", @"Enviar E-mail", @"Visualizar Site", @"Mostrar Mapa", nil];
         
         [as showInView:self.view];
         
@@ -141,29 +149,68 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+
+    //NSLog(@"Botão %d", buttonIndex);
     
-    
-    NSLog(@"Botão %d", buttonIndex);
-    
-    /*
     switch (buttonIndex) {
         case 0:
-            [self ligar]
+            [self ligar];
             break;
         case 1:
-            [self enviarEmail]
+            [self enviarEmail];
             break;
         case 2:
-            [self abrirSite]
+            [self abrirSite];
             break;
         case 3:
-            [self mostrarMapa]
+            [self mostrarMapa];
             break;
         default:
             break;
     }
     
-    */
+}
+
+- (void)ligar
+{
+    UIDevice *device = [UIDevice currentDevice];
+    
+    // iPhone
+    // iPad
+    // iPod touch
+    // iPhone Simulator
+    // openURL (biblioteca para comunicar com o iOS)
+    if ([device.model isEqualToString:@"iPhone"]) {
+        
+        NSString *numero = [NSString stringWithFormat:@"tel:%@", contatoSelecionado.telefone];
+        
+        [self abrirAplicativoComURL: numero];
+        
+    }else{
+        
+        [[[UIAlertView alloc] initWithTitle:@"Impossível fazer a ligação" message:@"Seu dispositivo não é um iPhone" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        
+    }
+}
+
+- (void)abrirAplicativoComURL: (NSString *)strURL
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:strURL]];
+}
+
+- (void)enviarEmail
+{
+    
+}
+
+- (void)abrirSite
+{
+    
+}
+
+- (void)mostrarMapa
+{
+    
 }
 
 // reescrevendo objeto para pegar a mensagem do botão delete que herdamos da classe e colocando ação de deletar
