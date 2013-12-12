@@ -222,6 +222,7 @@
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    // retirar a tela quando terminar a ação do e-mail
 }
 
 - (void)abrirSite
