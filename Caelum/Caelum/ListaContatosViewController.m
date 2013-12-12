@@ -211,7 +211,11 @@
 
 - (void)mostrarMapa
 {
+    NSString *url = [[NSString stringWithFormat:@"http://maps.google.com/maps?q=%@", contatoSelecionado.endereco]
+                     stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
     
+    [self abrirAplicativoComURL:url];
+
 }
 
 // reescrevendo objeto para pegar a mensagem do botão delete que herdamos da classe e colocando ação de deletar
