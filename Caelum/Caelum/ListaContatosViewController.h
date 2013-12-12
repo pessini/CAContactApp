@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "FormularioContatoViewControllerDelegate.h"
 
-@interface ListaContatosViewController : UITableViewController <FormularioContatoViewControllerDelegate>
+@interface ListaContatosViewController : UITableViewController <FormularioContatoViewControllerDelegate, UIActionSheetDelegate>
 
 @property (weak) NSMutableArray * contatos; // pode ser weak porque ela é dependente dos contatos
 
 // assign pq é uma propriedade primitiva (porém para o ARC o assign e weak é o mesmo)
 @property (assign) NSInteger linhaSelecionada;
+
+- (void) exibeMaisAcoes: (UIGestureRecognizer *) gesture;
 
 @end

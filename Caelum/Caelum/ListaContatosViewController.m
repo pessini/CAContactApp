@@ -104,6 +104,68 @@
     
 }
 
+
+// não é colocado no init porque os Outlets ainda não estão prontos
+// portanto o Xcode não dará erro porém o gesto não será reconhecido
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    UIGestureRecognizer * gr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(exibeMaisAcoes:)];
+    
+    [self.tableView addGestureRecognizer:gr];
+    
+}
+
+- (void) exibeMaisAcoes:(UIGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+    // verifica se o besto está no começo (se você deixar para o final, o usuário irá segurar e enquanto não soltar o menu de ações não aparece
+        
+        // a classe de gestos reconhece apenas o XY
+        
+        // CGPoint é um structure do C
+        CGPoint ponto = [gesture locationInView:self.tableView];
+        
+        NSIndexPath *ip = [self.tableView indexPathForRowAtPoint:ponto];
+        
+        Contato *contato = self.contatos[ip.row];
+        
+        UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:contato.nome delegate:self cancelButtonTitle:@"Cancela" destructiveButtonTitle:nil otherButtonTitles:@"Ligar", @"Enviar E-mail", @"Visualizar Site", @"Mostrar Mapa", nil];
+        
+        [as showInView:self.view];
+        
+    }
+    
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    
+    NSLog(@"Botão %d", buttonIndex);
+    
+    /*
+    switch (buttonIndex) {
+        case 0:
+            [self ligar]
+            break;
+        case 1:
+            [self enviarEmail]
+            break;
+        case 2:
+            [self abrirSite]
+            break;
+        case 3:
+            [self mostrarMapa]
+            break;
+        default:
+            break;
+    }
+    
+    */
+}
+
 // reescrevendo objeto para pegar a mensagem do botão delete que herdamos da classe e colocando ação de deletar
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
