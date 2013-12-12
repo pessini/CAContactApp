@@ -205,7 +205,8 @@
 
 - (void)abrirSite
 {
-    
+    [self abrirAplicativoComURL:contatoSelecionado.site]; // poderia verificar se tem ou não o http://
+    // aqui não precisa verificar pois todo o dispositivo tem Safari
 }
 
 - (void)mostrarMapa
