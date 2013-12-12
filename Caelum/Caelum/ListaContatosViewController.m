@@ -223,6 +223,16 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
     // retirar a tela quando terminar a ação do e-mail
+    
+    /*
+        Para tratar o resultado tem 4 variáveis
+     
+        MFMAilComposeResultCancelled
+        MFMAilComposeResultSaved
+        MFMAilComposeResultSent
+        MFMAilComposeResultFailed   
+
+     */
 }
 
 - (void)abrirSite
