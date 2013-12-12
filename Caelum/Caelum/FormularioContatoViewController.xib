@@ -305,7 +305,7 @@
 						<reference key="IBUIFontDescription" ref="251935269"/>
 						<reference key="IBUIFont" ref="671443118"/>
 					</object>
-					<object class="IBUIButton" id="950532675">
+					<object class="IBUIButton" id="702205385">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{12, 10}, {89, 69}}</string>
@@ -318,7 +318,7 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Button</string>
+						<string key="IBUINormalTitle">Foto</string>
 						<reference key="IBUIHighlightedTitleColor" ref="453588504"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
@@ -342,7 +342,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 548}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="950532675"/>
+				<reference key="NSNextKeyView" ref="702205385"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">10</int>
 					<object class="NSImage" key="NSImage">
@@ -4812,7 +4812,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">botaoFoto</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="950532675"/>
+						<reference key="destination" ref="702205385"/>
 					</object>
 					<int key="connectionID">319</int>
 				</object>
@@ -4864,7 +4864,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">botaoAdicionaImagem:</string>
-						<reference key="source" ref="950532675"/>
+						<reference key="source" ref="702205385"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -4893,7 +4893,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 							<reference ref="390646272"/>
 							<reference ref="595723903"/>
 							<reference ref="1017798585"/>
-							<reference ref="950532675"/>
+							<reference ref="702205385"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -4970,7 +4970,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">301</int>
-						<reference key="object" ref="950532675"/>
+						<reference key="object" ref="702205385"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
