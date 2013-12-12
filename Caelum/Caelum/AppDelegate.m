@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "FormularioContatoViewController.h"
 #import "ListaContatosViewController.h"
+#import "ContatosMapaViewController.h"
 
 @implementation AppDelegate
 
@@ -36,12 +37,18 @@
     // injetar dependência via setter (agora tem uma referência para o mesmo objeto da lista)
     lista.contatos = self.contatos;
     
+    ContatosMapaViewController * mapa = [[ContatosMapaViewController alloc] init];
+    UITabBarController * tabs = [[UITabBarController alloc] init];
+    
     // inicia a barra de navegação e coloca a lista acima
     UINavigationController * navigation = [[UINavigationController alloc] initWithRootViewController:lista];
     
+    // criando a view que tem o menu
+    tabs.viewControllers = @[navigation, mapa];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = navigation; // colocando o form como janela principal
+    self.window.rootViewController = tabs; // colocando o form como janela principal
     [self.window makeKeyAndVisible]; // com colchetes estou mandando uma mensagem para esse objeto
     
     return YES;
