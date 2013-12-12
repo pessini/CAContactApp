@@ -179,7 +179,7 @@
     // iPad
     // iPod touch
     // iPhone Simulator
-    // openURL (biblioteca para comunicar com o iOS)
+    // openURL (biblioteca para comunicar com o iOS) - http://handleopenurl.com/
     if ([device.model isEqualToString:@"iPhone"]) {
         
         NSString *numero = [NSString stringWithFormat:@"tel:%@", contatoSelecionado.telefone];
