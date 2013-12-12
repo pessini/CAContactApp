@@ -27,11 +27,6 @@
         
         // coloca o título na barra de navegação
         self.navigationItem.title = @"Mapa";
-
-        //criando o botão de navegação do mapa
-        MKUserTrackingBarButtonItem * btn = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapa];
-        
-        self.navigationItem.leftBarButtonItem = btn;
         
     }
     return self;
@@ -51,6 +46,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //criando o botão de navegação do mapa
+    MKUserTrackingBarButtonItem * btn = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapa];
+    
+    self.navigationItem.leftBarButtonItem = btn;
 }
 
 - (void)didReceiveMemoryWarning
