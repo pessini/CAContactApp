@@ -25,6 +25,14 @@
         
         self.tabBarItem = tbi;
         
+        // coloca o título na barra de navegação
+        self.navigationItem.title = @"Mapa";
+
+        //criando o botão de navegação do mapa
+        MKUserTrackingBarButtonItem * btn = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapa];
+        
+        self.navigationItem.leftBarButtonItem = btn;
+        
     }
     return self;
     
