@@ -14,6 +14,22 @@
 
 @implementation ContatosMapaViewController
 
+// sobrescrever o init do NSObject
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        
+        UIImage * img = [UIImage imageNamed:@"mapa-contatos.png"]; //nome de image lógico que ele busca a imagem de acordo com a tela
+        UITabBarItem * tbi = [[UITabBarItem alloc] initWithTitle:@"Mapa" image:img tag:0];
+        
+        self.tabBarItem = tbi;
+        
+    }
+    return self;
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

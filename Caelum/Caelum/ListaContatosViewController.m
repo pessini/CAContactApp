@@ -26,6 +26,11 @@
 {
     self = [super init];
     if (self) {
+
+        UIImage * img = [UIImage imageNamed:@"lista-contatos.png"]; //nome de image lógico que ele busca a imagem de acordo com a tela
+        UITabBarItem * tbi = [[UITabBarItem alloc] initWithTitle:@"Contatos" image:img tag:0];
+        
+        self.tabBarItem = tbi;
         
         // coloca o título na barra de navegação
         self.navigationItem.title = @"Contatos";
