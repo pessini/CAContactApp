@@ -124,7 +124,7 @@
         
         // a classe de gestos reconhece apenas o XY
         
-        // CGPoint é um structure do C
+        // CGPoint é um structure do C (por isso não tem referência)
         CGPoint ponto = [gesture locationInView:self.tableView];
         
         NSIndexPath *ip = [self.tableView indexPathForRowAtPoint:ponto];
