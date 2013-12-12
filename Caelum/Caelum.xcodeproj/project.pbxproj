@@ -90,7 +90,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F9EF821185A25060055B850 /* Custom Files */ = {
+		9F9EF821185A25060055B850 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				9F9EF827185A28A00055B850 /* apple-touch-icon-57x57-precomposed.png */,
@@ -105,7 +105,7 @@
 				9F9EF813185A24F20055B850 /* gps.png */,
 				9F9EF814185A24F20055B850 /* gps@2x.png */,
 			);
-			name = "Custom Files";
+			name = Images;
 			sourceTree = "<group>";
 		};
 		9FF7137318572E2F0018AF2D = {
@@ -140,7 +140,7 @@
 		9FF7138518572E2F0018AF2D /* Caelum */ = {
 			isa = PBXGroup;
 			children = (
-				9F9EF821185A25060055B850 /* Custom Files */,
+				9F9EF821185A25060055B850 /* Images */,
 				9FF7138E18572E2F0018AF2D /* AppDelegate.h */,
 				9FF7138F18572E2F0018AF2D /* AppDelegate.m */,
 				9F106EDE1857814E009BD48F /* ListaContatosViewController.h */,
