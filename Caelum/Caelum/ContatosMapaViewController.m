@@ -53,6 +53,8 @@
     
     self.navigationItem.leftBarButtonItem = btn;
     
+    
+    // delegar via código (porém fizemos via .xib arrastando até o file's owner e selecionando delegate
    // self.mapa.delegate = self;
 }
 
