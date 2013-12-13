@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface Contato : NSObject<NSCoding, MKAnnotation>
+@interface Contato : NSManagedObject<NSCoding, MKAnnotation>
 
 @property (copy) NSString * nome;
 @property (copy) NSString * telefone;

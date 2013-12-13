@@ -10,6 +10,7 @@
 
 @implementation Contato
 
+@dynamic nome, telefone, email, endereco, site, latitude, longitude, foto;
 
 - (CLLocationCoordinate2D) coordinate
 {

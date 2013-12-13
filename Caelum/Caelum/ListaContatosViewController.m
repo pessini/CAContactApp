@@ -55,6 +55,7 @@
     
     // dependência contatos do Formulário agora referencia o mesmo objeto da dependência de contatos da Lista
     form.delegate = self;
+    form.context = self.context;
     
     // cria uma pilha de navegação na barra de navegação
     [self.navigationController pushViewController:form animated:YES];

@@ -91,7 +91,7 @@
     
     if (!self.contato) { // verifica se não existe (se não, é uma inclusão...se sim, é esse mesmo que quero atualizar)
         // cria o objetivo contato
-        self.contato = [[Contato alloc] init];
+        self.contato = [NSEntityDescription insertNewObjectForEntityForName:@"Contato" inManagedObjectContext:self.context];
     }
     // preenche o objeto com os dados preenchidos
     self.contato.nome = self.nome.text;

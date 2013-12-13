@@ -33,4 +33,6 @@
 - (IBAction)buscarCoordenadas:(id)sender;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
 
+@property (weak) NSManagedObjectContext * context;
+
 @end
