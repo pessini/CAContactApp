@@ -99,8 +99,8 @@
     self.contato.email = self.email.text;
     self.contato.endereco = self.endereco.text;
     self.contato.site = self.site.text;
-    self.contato.latitude = self.latitude.text;
-    self.contato.longitude = self.longitude.text;
+    self.contato.latitude = [NSNumber numberWithFloat:[self.latitude.text floatValue]];
+    self.contato.longitude = [NSNumber numberWithFloat:[self.longitude.text floatValue]];
     
     if (self.botaoFoto.imageView.image) {
         self.contato.foto = self.botaoFoto.imageView.image;
