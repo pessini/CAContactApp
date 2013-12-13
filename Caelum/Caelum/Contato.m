@@ -10,7 +10,14 @@
 
 @implementation Contato
 
-- (NSString *)description{
+
+- (CLLocationCoordinate2D) coordinate
+{
+    return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
+}
+
+- (NSString *)description
+{
     return [NSString stringWithFormat:@"%@ <%@>", self.nome, self.email];
 }
 

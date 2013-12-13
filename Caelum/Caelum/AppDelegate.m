@@ -38,6 +38,8 @@
     lista.contatos = self.contatos;
     
     ContatosMapaViewController * mapa = [[ContatosMapaViewController alloc] init];
+    mapa.contatos = self.contatos; // injetou a dependência para o mapa
+    
     UITabBarController * tabs = [[UITabBarController alloc] init];
     
     // inicia a barra de navegação e coloca a lista acima

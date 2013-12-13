@@ -59,4 +59,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear: animated];
+    [self.mapa addAnnotations: self.contatos];
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.mapa removeAnnotations:self.contatos];
+}
+
 @end

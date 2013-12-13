@@ -11,5 +11,6 @@
 
 @interface ContatosMapaViewController : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapa;
+@property (weak) NSMutableArray * contatos; // pode ser weak porque ela é dependente dos contatos
 
 @end
