@@ -38,8 +38,8 @@
         self.email.text= self.contato.email;
         self.endereco.text= self.contato.endereco;
         self.site.text= self.contato.site;
-        self.latitude.text = self.contato.latitude;
-        self.longitude.text = self.contato.longitude;
+        self.latitude.text = [self.contato.latitude stringValue];
+        self.longitude.text = [self.contato.longitude stringValue];
 
         if (self.contato.foto) {
             [self.botaoFoto setImage:self.contato.foto forState:UIControlStateNormal];
