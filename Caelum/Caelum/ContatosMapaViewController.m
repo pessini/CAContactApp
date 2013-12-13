@@ -94,7 +94,7 @@
         pin.annotation = annotation;
     }
 
-    pin.pinColor = MKPinAnnotationColorRed;
+    pin.pinColor = MKPinAnnotationColorGreen;
 
     pin.canShowCallout = YES;
 
