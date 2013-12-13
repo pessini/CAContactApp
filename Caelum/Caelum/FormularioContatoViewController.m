@@ -8,6 +8,7 @@
 
 #import "FormularioContatoViewController.h"
 #import "Contato.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface FormularioContatoViewController ()
 
@@ -183,5 +184,26 @@
     
 }
 
+
+- (IBAction)buscarCoordenadas:(id)sender
+{
+    
+    [self.loading startAnimating];
+    
+    CLGeocoder * geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder geocodeAddressString:self.endereco.text completionHandler: ^ (NSArray * resultados, NSError * erro)
+     {
+         if (erro == nil && [resultados count] > 0) {
+             CLPlacemark * resultado = resultados[0];
+             CLLocationCoordinate2D coordenada = resultado.location.coordinate;
+             self.latitude.text = [NSString stringWithFormat:@"%f", coordenada.latitude];
+             self.longitude.text = [NSString stringWithFormat:@"%f", coordenada.longitude];
+         }
+         [self.loading stopAnimating];
+     }
+    ];
+    
+}
 
 @end

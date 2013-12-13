@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0D556A185B3D1F00ADF33B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */; };
 		9F106EE01857814E009BD48F /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F106EDF1857814E009BD48F /* ListaContatosViewController.m */; };
 		9F534DAA18574CB300BC1D78 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F534DA918574CB300BC1D78 /* Contato.m */; };
 		9F9EF811185A24AC0055B850 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7139118572E2F0018AF2D /* Default.png */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9F106EDE1857814E009BD48F /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
 		9F106EDF1857814E009BD48F /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 		9F534DA818574CB300BC1D78 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0D556A185B3D1F00ADF33B /* CoreLocation.framework in Frameworks */,
 				9FE8B216185A1F3000322252 /* MapKit.framework in Frameworks */,
 				9FE8B20F1859F16B00322252 /* MessageUI.framework in Frameworks */,
 				9FF7138018572E2F0018AF2D /* UIKit.framework in Frameworks */,
@@ -129,6 +132,7 @@
 		9FF7137E18572E2F0018AF2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */,
 				9FE8B215185A1F3000322252 /* MapKit.framework */,
 				9FE8B20E1859F16B00322252 /* MessageUI.framework */,
 				9FF7137F18572E2F0018AF2D /* UIKit.framework */,

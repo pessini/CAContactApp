@@ -30,5 +30,7 @@
 
 - (IBAction)botaoAdicionaImagem:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *botaoFoto;
+- (IBAction)buscarCoordenadas:(id)sender;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
 
 @end
