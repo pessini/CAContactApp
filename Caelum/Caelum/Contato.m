@@ -23,6 +23,8 @@
     [aCoder encodeObject:self.email forKey:@"email"];
     [aCoder encodeObject:self.endereco forKey:@"endereco"];
     [aCoder encodeObject:self.site forKey:@"site"];
+    [aCoder encodeObject:self.latitude forKey:@"latitude"];
+    [aCoder encodeObject:self.longitude forKey:@"longitude"];
     [aCoder encodeObject:self.foto forKey:@"foto"];
 }
 
@@ -38,6 +40,8 @@
         self.email = [aDecoder decodeObjectForKey:@"email"];
         self.endereco = [aDecoder decodeObjectForKey:@"endereco"];
         self.site = [aDecoder decodeObjectForKey:@"site"];
+        self.latitude = [aDecoder decodeObjectForKey:@"latitude"];
+        self.longitude = [aDecoder decodeObjectForKey:@"longitude"];
         self.foto = [aDecoder decodeObjectForKey:@"foto"];
     }
     

@@ -49,7 +49,6 @@
 		9F9EF818185A24F30055B850 /* mapa-contatos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapa-contatos@2x.png"; sourceTree = "<group>"; };
 		9F9EF819185A24F30055B850 /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Vila Mariana.gpx"; sourceTree = "<group>"; };
 		9F9EF825185A28830055B850 /* apple-touch-icon-57x57-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-57x57-precomposed.png"; sourceTree = "<group>"; };
-		9F9EF827185A28A00055B850 /* apple-touch-icon-57x57-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple-touch-icon-57x57-precomposed.png"; path = "../apple-touch-icon-57x57-precomposed.png"; sourceTree = "<group>"; };
 		9FA1C6C81858E034006391DF /* FormularioContatoViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewControllerDelegate.h; sourceTree = "<group>"; };
 		9FE8B20E1859F16B00322252 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9FE8B210185A1DC600322252 /* ContatosMapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosMapaViewController.h; sourceTree = "<group>"; };
@@ -93,7 +92,6 @@
 		9F9EF821185A25060055B850 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9F9EF827185A28A00055B850 /* apple-touch-icon-57x57-precomposed.png */,
 				9F9EF825185A28830055B850 /* apple-touch-icon-57x57-precomposed.png */,
 				9F9EF819185A24F30055B850 /* Vila Mariana.gpx */,
 				9F9EF817185A24F30055B850 /* mapa-contatos.png */,
@@ -146,12 +144,12 @@
 				9F106EDE1857814E009BD48F /* ListaContatosViewController.h */,
 				9F106EDF1857814E009BD48F /* ListaContatosViewController.m */,
 				9FF7139C185734AF0018AF2D /* FormularioContatoViewController.h */,
+				9FA1C6C81858E034006391DF /* FormularioContatoViewControllerDelegate.h */,
 				9FF7139D185734AF0018AF2D /* FormularioContatoViewController.m */,
+				9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */,
 				9FE8B210185A1DC600322252 /* ContatosMapaViewController.h */,
 				9FE8B211185A1DC600322252 /* ContatosMapaViewController.m */,
 				9FE8B212185A1DC600322252 /* ContatosMapaViewController.xib */,
-				9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */,
-				9FA1C6C81858E034006391DF /* FormularioContatoViewControllerDelegate.h */,
 				9F534DA818574CB300BC1D78 /* Contato.h */,
 				9F534DA918574CB300BC1D78 /* Contato.m */,
 				9FF7138618572E2F0018AF2D /* Supporting Files */,
