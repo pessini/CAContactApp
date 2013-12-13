@@ -16,6 +16,16 @@
     return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
 }
 
+- (NSString * )title
+{
+    return self.nome;
+}
+
+- (NSString *)subtitle
+{
+    return self.telefone;
+}
+
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"%@ <%@>", self.nome, self.email];
