@@ -15,8 +15,8 @@
 @property (copy) NSString * email;
 @property (copy) NSString * endereco;
 @property (copy) NSString * site;
-@property (copy) NSString * latitude;
-@property (copy) NSString * longitude;
+@property (copy) NSNumber * latitude;
+@property (copy) NSNumber * longitude;
 @property (strong) UIImage * foto;
 
 /*
