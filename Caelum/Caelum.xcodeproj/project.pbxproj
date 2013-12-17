@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56FB0EE31860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FB0EE21860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m */; };
 		9F0D556A185B3D1F00ADF33B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */; };
 		9F0D556D185B794600ADF33B /* Modelo_Contatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D556B185B794600ADF33B /* Modelo_Contatos.xcdatamodeld */; };
 		9F0D559D185B802B00ADF33B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0D559C185B802B00ADF33B /* CoreData.framework */; };
@@ -28,7 +29,6 @@
 		9FE8B213185A1DC600322252 /* ContatosMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B211185A1DC600322252 /* ContatosMapaViewController.m */; };
 		9FE8B214185A1DC600322252 /* ContatosMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8B212185A1DC600322252 /* ContatosMapaViewController.xib */; };
 		9FE8B216185A1F3000322252 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8B215185A1F3000322252 /* MapKit.framework */; };
-		9FEF32CA185B30D80088D8AD /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF32C9185B30A10088D8AD /* TPKeyboardAvoidingScrollView.m */; };
 		9FF7138018572E2F0018AF2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7137F18572E2F0018AF2D /* UIKit.framework */; };
 		9FF7138218572E2F0018AF2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7138118572E2F0018AF2D /* Foundation.framework */; };
 		9FF7138418572E2F0018AF2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7138318572E2F0018AF2D /* CoreGraphics.framework */; };
@@ -41,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56FB0EE11860CD7B003098D9 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		56FB0EE21860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9F0D556C185B794600ADF33B /* Modelo_Contatos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo_Contatos.xcdatamodel; sourceTree = "<group>"; };
 		9F0D559C185B802B00ADF33B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -62,8 +64,6 @@
 		9FE8B211185A1DC600322252 /* ContatosMapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosMapaViewController.m; sourceTree = "<group>"; };
 		9FE8B212185A1DC600322252 /* ContatosMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosMapaViewController.xib; sourceTree = "<group>"; };
 		9FE8B215185A1F3000322252 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		9FEF32C8185B30A10088D8AD /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = "../../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoidingScrollView.h"; sourceTree = "<group>"; };
-		9FEF32C9185B30A10088D8AD /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = "../../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoidingScrollView.m"; sourceTree = "<group>"; };
 		9FF7137C18572E2F0018AF2D /* Caelum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caelum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7137F18572E2F0018AF2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FF7138118572E2F0018AF2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,8 +166,8 @@
 				9FE8B212185A1DC600322252 /* ContatosMapaViewController.xib */,
 				9F534DA818574CB300BC1D78 /* Contato.h */,
 				9F534DA918574CB300BC1D78 /* Contato.m */,
-				9FEF32C8185B30A10088D8AD /* TPKeyboardAvoidingScrollView.h */,
-				9FEF32C9185B30A10088D8AD /* TPKeyboardAvoidingScrollView.m */,
+				56FB0EE11860CD7B003098D9 /* TPKeyboardAvoidingScrollView.h */,
+				56FB0EE21860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m */,
 				9FF7138618572E2F0018AF2D /* Supporting Files */,
 			);
 			path = Caelum;
@@ -262,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FEF32CA185B30D80088D8AD /* TPKeyboardAvoidingScrollView.m in Sources */,
 				9FF7138C18572E2F0018AF2D /* main.m in Sources */,
+				56FB0EE31860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				9FF7139018572E2F0018AF2D /* AppDelegate.m in Sources */,
 				9FF7139F185734AF0018AF2D /* FormularioContatoViewController.m in Sources */,
 				9F534DAA18574CB300BC1D78 /* Contato.m in Sources */,
