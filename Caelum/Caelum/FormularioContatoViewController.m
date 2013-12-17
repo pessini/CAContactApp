@@ -103,6 +103,7 @@
     self.contato.longitude = [NSNumber numberWithFloat:[self.longitude.text floatValue]];
     
     if (self.botaoFoto.imageView.image) {
+
         self.contato.foto = self.botaoFoto.imageView.image;
     }
     
@@ -153,11 +154,59 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark -
+#pragma mark UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *imagemSelecionada = [info valueForKey:UIImagePickerControllerEditedImage];
+    
+    [self.botaoFoto setImage:imagemSelecionada forState:UIControlStateNormal];
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -
+#pragma mark UIActionSheetDelegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 2) return; // Cancela
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    
+    switch (buttonIndex) {
+        case 0:
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+            
+        case 1:
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+            
+        default:
+            break;
+    }
+    
+    picker.allowsEditing = YES;
+    picker.delegate = self;
+    
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
 - (IBAction)botaoAdicionaImagem:(id)sender
 {
-    
+   
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        //
+        // Câmera disponível
+        UIActionSheet *opcoes = [[UIActionSheet alloc] initWithTitle:@"Escolha a foto do contato" delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Tirar foto", @"Escolher da biblioteca", nil];
+        
+        if (self.contato) {
+            [opcoes showFromTabBar:self.tabBarController.tabBar];
+        }
+        else {
+            [opcoes showInView:self.view];
+        }
     }else{
 
         UIImagePickerController* picker = [[UIImagePickerController alloc] init];
@@ -169,18 +218,6 @@
         [self presentViewController:picker animated:YES completion:nil];
 
     }
-    
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    // aqui trata a alteração do botão
-    
-    UIImage * imagemSelecionada = info[UIImagePickerControllerEditedImage];
-    
-    [self.botaoFoto setImage:imagemSelecionada forState:UIControlStateNormal];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

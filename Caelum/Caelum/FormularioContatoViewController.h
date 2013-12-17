@@ -10,7 +10,9 @@
 #import "Contato.h"
 #import "FormularioContatoViewControllerDelegate.h"
 
-@interface FormularioContatoViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+//@interface FormularioContatoViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@interface FormularioContatoViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nome;
 @property (weak, nonatomic) IBOutlet UITextField *telefone;
@@ -22,7 +24,7 @@
 
 - (IBAction)proximoCampo:(UITextField *)campoAtual;
 
-// ele não trabalha com a lista, só tem a refer6encia do contato na lista
+// ele não trabalha com a lista, só tem a referência do contato na lista
 @property (weak) id<FormularioContatoViewControllerDelegate> delegate;
 
 - (id)initWithContato:(Contato *)contato;
