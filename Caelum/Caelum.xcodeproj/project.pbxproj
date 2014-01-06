@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563CD53018620EC9006BEAFF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 563CD52F18620EC9006BEAFF /* Default-568h@2x.png */; };
+		56B4D7A3186214BF004332C6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B4D7A2186214BF004332C6 /* Default@2x.png */; };
 		56FB0EE31860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FB0EE21860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m */; };
 		9F0D556A185B3D1F00ADF33B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */; };
 		9F0D556D185B794600ADF33B /* Modelo_Contatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D556B185B794600ADF33B /* Modelo_Contatos.xcdatamodeld */; };
@@ -14,7 +16,6 @@
 		9F106EE01857814E009BD48F /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F106EDF1857814E009BD48F /* ListaContatosViewController.m */; };
 		9F534DAA18574CB300BC1D78 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F534DA918574CB300BC1D78 /* Contato.m */; };
 		9F9EF811185A24AC0055B850 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7139118572E2F0018AF2D /* Default.png */; };
-		9F9EF812185A24B10055B850 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7139318572E2F0018AF2D /* Default@2x.png */; };
 		9F9EF81A185A24F30055B850 /* gps.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F9EF813185A24F20055B850 /* gps.png */; };
 		9F9EF81B185A24F30055B850 /* gps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F9EF814185A24F20055B850 /* gps@2x.png */; };
 		9F9EF81C185A24F30055B850 /* lista-contatos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F9EF815185A24F20055B850 /* lista-contatos.png */; };
@@ -35,12 +36,13 @@
 		9FF7138A18572E2F0018AF2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7138818572E2F0018AF2D /* InfoPlist.strings */; };
 		9FF7138C18572E2F0018AF2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7138B18572E2F0018AF2D /* main.m */; };
 		9FF7139018572E2F0018AF2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7138F18572E2F0018AF2D /* AppDelegate.m */; };
-		9FF7139618572E2F0018AF2D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7139518572E2F0018AF2D /* Default-568h@2x.png */; };
 		9FF7139F185734AF0018AF2D /* FormularioContatoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7139D185734AF0018AF2D /* FormularioContatoViewController.m */; };
 		9FF713A0185734AF0018AF2D /* FormularioContatoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		563CD52F18620EC9006BEAFF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		56B4D7A2186214BF004332C6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		56FB0EE11860CD7B003098D9 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		56FB0EE21860CD7B003098D9 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		9F0D5569185B3D1F00ADF33B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -75,8 +77,6 @@
 		9FF7138E18572E2F0018AF2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FF7138F18572E2F0018AF2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9FF7139118572E2F0018AF2D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9FF7139318572E2F0018AF2D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9FF7139518572E2F0018AF2D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9FF7139C185734AF0018AF2D /* FormularioContatoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewController.h; sourceTree = "<group>"; };
 		9FF7139D185734AF0018AF2D /* FormularioContatoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularioContatoViewController.m; sourceTree = "<group>"; };
 		9FF7139E185734AF0018AF2D /* FormularioContatoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormularioContatoViewController.xib; sourceTree = "<group>"; };
@@ -103,14 +103,15 @@
 		9F9EF821185A25060055B850 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				563CD52F18620EC9006BEAFF /* Default-568h@2x.png */,
 				9F9EF825185A28830055B850 /* apple-touch-icon-57x57-precomposed.png */,
 				9F9EF819185A24F30055B850 /* Vila Mariana.gpx */,
 				9F9EF817185A24F30055B850 /* mapa-contatos.png */,
 				9F9EF818185A24F30055B850 /* mapa-contatos@2x.png */,
 				9F9EF815185A24F20055B850 /* lista-contatos.png */,
+				56B4D7A2186214BF004332C6 /* Default@2x.png */,
 				9F9EF816185A24F20055B850 /* lista-contatos@2x.png */,
 				9FF7139118572E2F0018AF2D /* Default.png */,
-				9FF7139318572E2F0018AF2D /* Default@2x.png */,
 				9F9EF813185A24F20055B850 /* gps.png */,
 				9F9EF814185A24F20055B850 /* gps@2x.png */,
 			);
@@ -178,7 +179,6 @@
 			children = (
 				9FF7138718572E2F0018AF2D /* Caelum-Info.plist */,
 				9FF7138D18572E2F0018AF2D /* Caelum-Prefix.pch */,
-				9FF7139518572E2F0018AF2D /* Default-568h@2x.png */,
 				9FF7138818572E2F0018AF2D /* InfoPlist.strings */,
 				9FF7138B18572E2F0018AF2D /* main.m */,
 			);
@@ -213,6 +213,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = ios3918;
+				TargetAttributes = {
+					9FF7137B18572E2F0018AF2D = {
+						DevelopmentTeam = B3AUF7HQKG;
+					};
+				};
 			};
 			buildConfigurationList = 9FF7137718572E2F0018AF2D /* Build configuration list for PBXProject "Caelum" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -236,16 +241,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B4D7A3186214BF004332C6 /* Default@2x.png in Resources */,
 				9F9EF824185A260F0055B850 /* main.m in Resources */,
 				9F9EF823185A260B0055B850 /* Caelum-Prefix.pch in Resources */,
-				9F9EF812185A24B10055B850 /* Default@2x.png in Resources */,
 				9F9EF811185A24AC0055B850 /* Default.png in Resources */,
 				9FF7138A18572E2F0018AF2D /* InfoPlist.strings in Resources */,
-				9FF7139618572E2F0018AF2D /* Default-568h@2x.png in Resources */,
 				9F9EF81A185A24F30055B850 /* gps.png in Resources */,
 				9F9EF81B185A24F30055B850 /* gps@2x.png in Resources */,
 				9F9EF81C185A24F30055B850 /* lista-contatos.png in Resources */,
 				9F9EF81D185A24F30055B850 /* lista-contatos@2x.png in Resources */,
+				563CD53018620EC9006BEAFF /* Default-568h@2x.png in Resources */,
 				9F9EF81E185A24F30055B850 /* mapa-contatos.png in Resources */,
 				9F9EF81F185A24F30055B850 /* mapa-contatos@2x.png in Resources */,
 				9F9EF820185A24F30055B850 /* Vila Mariana.gpx in Resources */,
@@ -346,6 +351,7 @@
 		9FF7139A18572E2F0018AF2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Caelum/Caelum-Prefix.pch";
 				INFOPLIST_FILE = "Caelum/Caelum-Info.plist";
@@ -357,6 +363,7 @@
 		9FF7139B18572E2F0018AF2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Caelum/Caelum-Prefix.pch";
 				INFOPLIST_FILE = "Caelum/Caelum-Info.plist";
